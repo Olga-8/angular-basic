@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    background-color: rgb(189, 189, 189);
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.navbar a {
+    color: rgb(9, 179, 83);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 179, 83);
+}
+.navbar a.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 179, 83);
+}
+.site-header {
+    padding: 5px 30px;
+}
+.site-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

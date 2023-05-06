@@ -1,0 +1,20 @@
+.header{
+    background-color: #faf9f9;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.site-image img {
+    width: 320px;
+    height: 240px;
+}
+.site-slogan {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f03c1c;
+    padding: 30px;
+}
