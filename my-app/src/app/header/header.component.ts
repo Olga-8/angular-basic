@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  image = 'https://cdn-icons-png.flaticon.com/512/862/862856.png';
+  image: string  = 'https://cdn-icons-png.flaticon.com/512/862/862856.png';
+  slogan: string = 'Everything you need in one place';
+
+  constructor() { }
+
+
 }

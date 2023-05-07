@@ -1,3 +1,6 @@
-<div class="alert alert-warning">
-    <p>This website uses cookies</p>
+<div class="alert alert-warning notification" [hidden]="displayNotification">
+  This website uses cookies
+    <div class="close">
+        <button type="button" (click)="closeNotification()">X</button>
+    </div>
 </div>
