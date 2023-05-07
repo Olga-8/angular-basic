@@ -1,5 +1,6 @@
 <div class="search-div">
     <span class="search-text">Search: </span>
-    <input type="text" class="search-input" placeholder="Search" (input)="changeSearchValue($event)">
+    <!-- <input type="text" class="search-input" placeholder="Search" (input)="changeSearchValue($event)"> -->
+    <input type="text" type="text" class="search-input" [(ngModel)]="searchValue">
     <span class="search-value">You searched for: "{{ searchValue }}" </span>
 </div>
