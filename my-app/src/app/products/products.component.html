@@ -18,7 +18,10 @@
 
     <div class="product-options">
       <div class="btn btn-success">Show details</div>
-      <div class="btn btn-warning">Buy now</div>
+      <div class="btn btn-warning" *ngIf="i.avaliable === 'Avaliable'; else notifyme">Buy now</div>
+        <ng-template #notifyme>
+            <div class="btn btn-danger">Notify me</div>
+        </ng-template>
     </div>
   </div>
 </div>
