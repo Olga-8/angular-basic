@@ -1,0 +1,23 @@
+<h3>Fruits</h3>
+<div *ngFor="let i of productsOfFruits" class="">
+  <div class="product-container">
+   
+      <div class="product-el">
+       
+        <div class="product-name">Name:{{ i.name }}</div>
+        <div class="prodact-details">
+            <div >
+                <img [src]="i.image" alt="image" class="product-img" />
+              </div>
+          <div class="details">Price:{{ i.price | number : "1.2-2" | currency : "EUR" }}</div>
+          <div class="details">Description:{{ i.description }}</div>
+        </div>
+      </div>
+    
+
+    <div class="product-options">
+      <div class="btn btn-success">Show details</div>
+      <div class="btn btn-warning">Buy now</div>
+    </div>
+  </div>
+</div>
