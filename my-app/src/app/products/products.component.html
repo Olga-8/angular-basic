@@ -2,14 +2,15 @@
 <div *ngFor="let i of productsOfFruits" class="">
   <div class="product-container">
    
-      <div class="product-el">
+      <div class="product-el" [ngStyle]="{backgroundColor: i.avaliable === 'Avaliable' ? '#14d75942' : '#d7142f42'}">
        
         <div class="product-name">Name:{{ i.name }}</div>
         <div class="prodact-details">
-            <div >
+            <div>
                 <img [src]="i.image" alt="image" class="product-img" />
-              </div>
-          <div class="details">Price:{{ i.price | number : "1.2-2" | currency : "EUR" }}</div>
+            </div>
+            <div class="details" [ngStyle]="{color: i.avaliable === 'Avaliable' ? 'green' : 'red'}">{{ i.avaliable }}</div>    
+            <div class="details">Price:{{ i.price | number : "1.2-2" | currency : "EUR" }}</div>
           <div class="details">Description:{{ i.description }}</div>
         </div>
       </div>
