@@ -1,4 +1,4 @@
-<div class="search-div">
+<div class="search-div" [ngClass]="{changeBackground: searchValue != ''}">
     <span class="search-text">Search: </span>
     <!-- <input type="text" class="search-input" placeholder="Search" (input)="changeSearchValue($event)"> -->
     <input type="text" type="text" class="search-input" [(ngModel)]="searchValue">

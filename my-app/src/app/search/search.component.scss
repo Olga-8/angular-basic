@@ -1,5 +1,5 @@
 .search-div {
-    margin: 10px 20px;
+    margin: 10px 0px;
     padding: 10px 20px;
 }
 input[type=text]{
@@ -13,4 +13,7 @@ input[type=text]{
 .search-value{
     margin-left: 20px;
     margin-top: 10px;
+}
+.changeBackground{
+    background-color: rgba(20, 215, 89, 0.26);
 }

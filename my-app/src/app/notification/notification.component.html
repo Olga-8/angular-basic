@@ -1,4 +1,4 @@
-<div class="alert alert-warning notification" [hidden]="displayNotification">
+<div class="alert alert-warning notification" [ngClass]="{fadeOut: displayNotification}">
   This website uses cookies
     <div class="close">
         <button type="button" (click)="closeNotification()">X</button>
